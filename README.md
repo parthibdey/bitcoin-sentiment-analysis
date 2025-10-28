@@ -81,6 +81,26 @@ bitcoin_sentiment_analysis/
 - tabulate
 - git-lfs (for handling large files)
 
+## 📊 Data Description
+
+### Input Data
+- `historical_trader_data.csv`: Contains trading data with columns like:
+  - `Timestamp IST`: Trade timestamp
+  - `Closed PnL`: Profit/Loss for each trade
+  - `Side`: Trade direction (Buy/Sell)
+  - (and other trading metrics)
+
+- `fear_greed_index.csv`: Contains sentiment data with:
+  - `date`: The date of the sentiment reading
+  - `classification`: Market sentiment (Extreme Fear, Fear, Neutral, Greed, Extreme Greed)
+
+### Generated Data
+- `merged_trader_sentiment.csv`: Combined dataset with:
+  - All original trading data
+  - `Classification`: Added from sentiment data
+  - `is_profitable`: Boolean flag (True if `Closed PnL > 0`)
+  - Used to calculate win rates in the analysis
+
 ## ⚠️ Large Files Notice
 This repository uses Git LFS (Large File Storage) to handle large files:
 - `output/trading_model.joblib` (108.21 MB)
