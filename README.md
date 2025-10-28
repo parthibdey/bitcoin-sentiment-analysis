@@ -79,3 +79,14 @@ bitcoin_sentiment_analysis/
 - seaborn
 - joblib
 - tabulate
+- git-lfs (for handling large files)
+
+## ⚠️ Large Files Notice
+This repository uses Git LFS (Large File Storage) to handle large files:
+- `output/trading_model.joblib` (108.21 MB)
+
+To clone this repository with all files, first install Git LFS:
+```bash
+git lfs install
+git clone https://github.com/parthibdey/bitcoin-sentiment-analysis.git
+```
