@@ -319,7 +319,7 @@ def generate_report(performance, model_metrics=None, feature_importance=None, ou
     # Add data and methodology
     report += "## 🔍 Data and Methodology\n"
     report += "### Data Sources\n"
-    report += "- **Trader Data**: Historical trades from Hyperliquid exchange\n"
+    report += "- **Trader Data**: Historical trades\n"
     report += "- **Sentiment Data**: Bitcoin Fear & Greed Index\n\n"
 
     report += "### Analysis Period\n"

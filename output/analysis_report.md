@@ -72,7 +72,7 @@ The following features were most important in predicting trade profitability:
 
 ## 🔍 Data and Methodology
 ### Data Sources
-- **Trader Data**: Historical trades from Hyperliquid exchange
+- **Trader Data**: Historical trades 
 - **Sentiment Data**: Bitcoin Fear & Greed Index
 
 ### Analysis Period
